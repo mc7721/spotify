@@ -1,0 +1,141 @@
+{
+    "name": "Spotify",
+    "description": "Spotify is a digital music service that gives you access to millions of songs.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1165-spotify.jpg",
+    "tags": [
+        "change log example",
+        "general data",
+        "have api",
+        "have swagger",
+        "issues example",
+        "music",
+        "pedestal",
+        "relative data",
+        "service api",
+        "streaming",
+        "streams"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/spotify\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Spotify",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1165-spotify.jpg",
+            "humanURL": "http:\/\/spotify.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/spotify.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/spotify-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "API.json - Authoritative",
+            "url": "https:\/\/developer.spotify.com\/wp-content\/uploads\/apis.json"
+        },
+        {
+            "type": "Android SDK",
+            "url": "https:\/\/developer.spotify.com\/technologies\/spotify-android-sdk\/"
+        },
+        {
+            "type": "Application Gallery",
+            "url": "https:\/\/developer.spotify.com\/my-applications\/"
+        },
+        {
+            "type": "Application Gallery",
+            "url": "https:\/\/developer.spotify.com\/showcase\/"
+        },
+        {
+            "type": "Base URL",
+            "url": "https:\/\/api.spotify.com"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.spotify.com\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/www.spotify.com\/blog\/feed"
+        },
+        {
+            "type": "Change Logs",
+            "url": "https:\/\/developer.spotify.com\/web-api\/change-log\/"
+        },
+        {
+            "type": "Console",
+            "url": "https:\/\/developer.spotify.com\/web-api\/console\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/spotify"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/spotify"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/developer.spotify.com\/"
+        },
+        {
+            "type": "Email",
+            "url": "office@spotify.com"
+        },
+        {
+            "type": "iOS SDK",
+            "url": "https:\/\/developer.spotify.com\/technologies\/spotify-ios-sdk\/"
+        },
+        {
+            "type": "Issues",
+            "url": "https:\/\/github.com\/spotify\/web-api\/issues"
+        },
+        {
+            "type": "LinkedIn",
+            "url": "https:\/\/www.linkedin.com\/company\/spotify\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/1165-2019-09-04-03-25-17.json"
+        },
+        {
+            "type": "Stack Overflow",
+            "url": "http:\/\/stackoverflow.com\/questions\/tagged\/spotify"
+        },
+        {
+            "type": "Terms Of Service",
+            "url": "https:\/\/developer.spotify.com\/developer-terms-of-use\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/SpotifyPlatform"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/spotify"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/spotify"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.spotify.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/spotify.com"
+        }
+    ]
+}
