@@ -1,0 +1,1775 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "Spotify",
+        "description": "Our Web API lets your applications fetch data from the Spotify music catalog and manage user???s playlists and saved music. Based on simple REST principles, our Web API endpoints return metadata in JSON format about artists, albums, and tracks directly from the Spotify catalogue. The API also provides access to user-related data such as playlists and music saved in a ???Your Music??? library, subject to user???s authorization.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.spotify.com\/v1"
+    ],
+    "paths": {
+        "\/albums": {
+            "get": {
+                "summary": "Get Albums",
+                "description": "[Get Several Albums](https:\/\/developer.spotify.com\/web-api\/get-several-albums\/)\n",
+                "operationId": "GetSeveralAlbumshttpsdeveloperspotifycomwebapigetseveralalbums",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/albums\/{id}": {
+            "get": {
+                "summary": "Get Album",
+                "description": "[Get an Album](https:\/\/developer.spotify.com\/web-api\/get-album\/)\n",
+                "operationId": "GetAnAlbumhttpsdeveloperspotifycomwebapigetalbum",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The Spotify ID for the album"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/albums\/{id}\/tracks": {
+            "get": {
+                "summary": "Get Album Tracks",
+                "description": "[Get an Album's Tracks](https:\/\/developer.spotify.com\/web-api\/get-albums-tracks\/)\n",
+                "operationId": "GetAnAlbumsTrackshttpsdeveloperspotifycomwebapigetalbumstracks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The Spotify ID for the album"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/artists": {
+            "get": {
+                "summary": "Get Artists",
+                "description": "[Get Several Artists](https:\/\/developer.spotify.com\/web-api\/get-several-artists\/)\n",
+                "operationId": "GetSeveralArtistshttpsdeveloperspotifycomwebapigetseveralartists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    }
+                ]
+            }
+        },
+        "\/artists\/{id}": {
+            "get": {
+                "summary": "Get Artist",
+                "description": "[Get an Artist](https:\/\/developer.spotify.com\/web-api\/get-artist\/)\n",
+                "operationId": "GetAnArtisthttpsdeveloperspotifycomwebapigetartist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The Spotify ID for the album"
+                    }
+                ]
+            }
+        },
+        "\/artists\/{id}\/albums": {
+            "get": {
+                "summary": "Get Artist Albums",
+                "description": "[Get an Artist's Albums](https:\/\/developer.spotify.com\/web-api\/get-artists-albums\/)\n",
+                "operationId": "GetAnArtistsAlbumshttpsdeveloperspotifycomwebapigetartistsalbums",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The Spotify ID for the album"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "album_type",
+                        "in": "query",
+                        "description": "Filter by album types"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/artists\/{id}\/related-artists": {
+            "get": {
+                "summary": "Get Artist Related ARtists",
+                "description": "[Get an Artist's Related Artists](https:\/\/developer.spotify.com\/web-api\/get-related-artists\/)\n",
+                "operationId": "GetAnArtistsRelatedArtistshttpsdeveloperspotifycomwebapigetrelatedartists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The Spotify ID for the album"
+                    }
+                ]
+            }
+        },
+        "\/artists\/{id}\/top-tracks": {
+            "get": {
+                "summary": "Get Artist Top Tracks",
+                "description": "[Get an Artist's Top Tracks](https:\/\/developer.spotify.com\/web-api\/get-artists-top-tracks\/)\n",
+                "operationId": "GetAnArtistsTopTrackshttpsdeveloperspotifycomwebapigetartiststoptracks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The Spotify ID for the album"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "The country (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/browse\/categories": {
+            "get": {
+                "summary": "Browse Categories",
+                "description": "[Get a List of Browse Categories](https:\/\/developer.spotify.com\/web-api\/get-list-categories\/)\n",
+                "operationId": "GetAListOfBrowseCategorieshttpsdeveloperspotifycomwebapigetlistcategories",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "The country (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "locale",
+                        "in": "query",
+                        "description": "The desired language, consisting of an ISO 639 language code and an ISO 3166-1 alpha-2 country code, joined by an underscore. For example: es_MX, meaning \"Spanish (Mexico)\".\n"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            }
+        },
+        "\/browse\/categories\/{category_id}": {
+            "get": {
+                "summary": "Browse Category",
+                "description": "[Get a Single Browse Category](https:\/\/developer.spotify.com\/web-api\/get-category\/)\n",
+                "operationId": "GetASingleBrowseCategoryhttpsdeveloperspotifycomwebapigetcategory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "category_id",
+                        "in": "path",
+                        "description": "The Spotify ID of the category you wish to fetch."
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "The country (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "locale",
+                        "in": "query",
+                        "description": "The desired language, consisting of an ISO 639 language code and an ISO 3166-1 alpha-2 country code, joined by an underscore. For example: es_MX, meaning \"Spanish (Mexico)\".\n"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            }
+        },
+        "\/browse\/categories\/{category_id}\/playlists": {
+            "get": {
+                "summary": "Browse Category Playlists",
+                "description": "[Get a Category's playlists](https:\/\/developer.spotify.com\/web-api\/get-categorys-playlists\/)\n",
+                "operationId": "GetACategorysPlaylistshttpsdeveloperspotifycomwebapigetcategorysplaylists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "category_id",
+                        "in": "path",
+                        "description": "The Spotify ID of the category you wish to fetch."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "The country (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            }
+        },
+        "\/browse\/featured-playlists": {
+            "get": {
+                "summary": "Browse Featured Playlists",
+                "description": "[Get a List of Featured Playlists](https:\/\/developer.spotify.com\/web-api\/get-list-featured-playlists\/)\n",
+                "operationId": "GetAListOfFeaturedPlaylistshttpsdeveloperspotifycomwebapigetlistfeaturedplaylists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "The country (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "locale",
+                        "in": "query",
+                        "description": "The desired language, consisting of an ISO 639 language code and an ISO 3166-1 alpha-2 country code, joined by an underscore. For example: es_MX, meaning \"Spanish (Mexico)\".\n"
+                    },
+                    {
+                        "name": "timestamp",
+                        "in": "query",
+                        "description": "A timestamp in ISO 8601 format (yyyy-MM-dd'T'HH:mm:ss) with the user's local time to get results tailored to a specific date and time in the day. If not provided, it defaults to the current UTC time. Example: \"2014-10-23T09:00:00\" for a user whose local time is 9AM.\n"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            }
+        },
+        "\/browse\/new-releases": {
+            "get": {
+                "summary": "Browse New Releases",
+                "description": "[Get a List of New Releases](https:\/\/developer.spotify.com\/web-api\/get-list-new-releases\/)\n",
+                "operationId": "GetAListOfNewReleaseshttpsdeveloperspotifycomwebapigetlistnewreleases",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "The country (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            }
+        },
+        "\/me": {
+            "get": {
+                "summary": "Get Me",
+                "description": "[Get Current User's Profile](https:\/\/developer.spotify.com\/web-api\/get-current-users-profile\/)\n",
+                "operationId": "GetCurrentUsersProfilehttpsdeveloperspotifycomwebapigetcurrentusersprofile",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/me\/following": {
+            "delete": {
+                "summary": "Delete Following",
+                "description": "[Unfollow Artists or Users](https:\/\/developer.spotify.com\/web-api\/unfollow-artists-users\/)\n",
+                "operationId": "UnfollowArtistsOrUsershttpsdeveloperspotifycomwebapiunfollowartistsusers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "The type to unfollow."
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Following",
+                "description": "[Get User's Followed Artists](https:\/\/developer.spotify.com\/web-api\/get-followed-artists\/)\n",
+                "operationId": "GetUsersFollowedArtistshttpsdeveloperspotifycomwebapigetfollowedartists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "The type to unfollow."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "after",
+                        "in": "query",
+                        "description": "The last artist ID retrieved from the previous request."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update Following",
+                "description": "[Follow Artists or Users](https:\/\/developer.spotify.com\/web-api\/follow-artists-users\/)\n",
+                "operationId": "FollowArtistsOrUsershttpsdeveloperspotifycomwebapifollowartistsusers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "The type to unfollow."
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    }
+                ]
+            }
+        },
+        "\/me\/following\/contains": {
+            "get": {
+                "summary": "Get Following contains",
+                "description": "[Check if Current User Follows Artists or Users](https:\/\/developer.spotify.com\/web-api\/check-current-user-follows\/)\n",
+                "operationId": "CheckIfCurrentUserFollowsArtistsOrUsershttpsdeveloperspotifycomwebapicheckcurrentuserfollows",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "The type to unfollow."
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    }
+                ]
+            }
+        },
+        "\/me\/tracks": {
+            "delete": {
+                "summary": "Delete My Tracks",
+                "description": "[Remove Tracks for Current User](https:\/\/developer.spotify.com\/web-api\/remove-tracks-user\/)\n",
+                "operationId": "RemoveTracksForCurrentUserhttpsdeveloperspotifycomwebapiremovetracksuser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get My Tracks",
+                "description": "[Get Current User's Saved Tracks](https:\/\/developer.spotify.com\/web-api\/get-users-saved-tracks\/)\n",
+                "operationId": "GetCurrentUsersSavedTrackshttpsdeveloperspotifycomwebapigetuserssavedtracks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update My Tracks",
+                "description": "[Save Tracks for Current User](https:\/\/developer.spotify.com\/web-api\/save-tracks-user\/)\n",
+                "operationId": "SaveTracksForCurrentUserhttpsdeveloperspotifycomwebapisavetracksuser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            }
+        },
+        "\/me\/tracks\/contains": {
+            "get": {
+                "summary": "Get My Track Contains",
+                "description": "[Check Current User's Saved Tracks](https:\/\/developer.spotify.com\/web-api\/check-users-saved-tracks\/)\n",
+                "operationId": "CheckCurrentUsersSavedTrackshttpsdeveloperspotifycomwebapicheckuserssavedtracks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    }
+                ]
+            }
+        },
+        "\/search": {
+            "get": {
+                "summary": "Search",
+                "description": "[Search for an Item](https:\/\/developer.spotify.com\/web-api\/search-item\/)\n",
+                "operationId": "SearchForAnItemhttpsdeveloperspotifycomwebapisearchitem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "The search query's keywords (and optional field filters). The search is not case-sensitive: 'roadhouse' will match 'Roadhouse', 'roadHouse', etc. Keywords will be matched in any order unless surrounded by quotes, thus q=roadhouse&20blues will match both 'Blues Roadhouse' and 'Roadhouse of the Blues'. Quotation marks can be used to limit the match to a phrase: q=roadhouse&20blues will match 'My Roadhouse Blues' but not 'Roadhouse of the Blues'. By default, results are returned when a match is fou"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "The type to unfollow."
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/tracks": {
+            "get": {
+                "summary": "Get Tracks",
+                "description": "[Get Several Tracks](https:\/\/developer.spotify.com\/web-api\/get-several-tracks\/)\n",
+                "operationId": "GetSeveralTrackshttpsdeveloperspotifycomwebapigetseveraltracks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/tracks\/{id}": {
+            "get": {
+                "summary": "Get Track",
+                "description": "[Get a Track](https:\/\/developer.spotify.com\/web-api\/get-track\/)\n",
+                "operationId": "GetATrackhttpsdeveloperspotifycomwebapigettrack",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The Spotify ID for the album"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_id}": {
+            "get": {
+                "summary": "Get User",
+                "description": "[Get a User's Profile](https:\/\/developer.spotify.com\/web-api\/get-users-profile\/)\n",
+                "operationId": "GetAUsersProfilehttpsdeveloperspotifycomwebapigetusersprofile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_id}\/playlists": {
+            "get": {
+                "summary": "Get User Playlists",
+                "description": "[Get a List of a User's Playlists](https:\/\/developer.spotify.com\/web-api\/get-list-users-playlists\/)\n",
+                "operationId": "GetAListOfAUsersPlaylistshttpsdeveloperspotifycomwebapigetlistusersplaylists",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add User Playlists",
+                "description": "[Create a Playlist](https:\/\/developer.spotify.com\/web-api\/create-playlist\/)\n",
+                "operationId": "CreateAPlaylisthttpsdeveloperspotifycomwebapicreateplaylist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_id}\/playlists\/{playlist_id}": {
+            "get": {
+                "summary": "Get User Playlist",
+                "description": "[Get a Playlist](https:\/\/developer.spotify.com\/web-api\/get-playlist\/)\n",
+                "operationId": "GetAPlaylisthttpsdeveloperspotifycomwebapigetplaylist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "A comma-separated list of fields to filter query"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update User Playlist",
+                "description": "[Change a Playlist's Details](https:\/\/developer.spotify.com\/web-api\/change-playlist-details\/)\n",
+                "operationId": "ChangeAPlaylistsDetailshttpsdeveloperspotifycomwebapichangeplaylistdetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_id}\/playlists\/{playlist_id}\/followers": {
+            "delete": {
+                "summary": "Delete User Playlist Followers",
+                "description": "[Unfollow a Playlist](https:\/\/developer.spotify.com\/web-api\/unfollow-playlist\/)\n",
+                "operationId": "UnfollowAPlaylisthttpsdeveloperspotifycomwebapiunfollowplaylist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update User Playlist Followers",
+                "description": "[Follow a Playlist](https:\/\/developer.spotify.com\/web-api\/follow-playlist\/)\n",
+                "operationId": "FollowAPlaylisthttpsdeveloperspotifycomwebapifollowplaylist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_id}\/playlists\/{playlist_id}\/followers\/contains": {
+            "get": {
+                "summary": "Get User Playlist Followers Contains",
+                "description": "[Check if Users Follow a Playlist](https:\/\/developer.spotify.com\/web-api\/check-user-following-playlist\/)\n",
+                "operationId": "CheckIfUsersFollowAPlaylisthttpsdeveloperspotifycomwebapicheckuserfollowingplaylist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "A comma-separated list of IDs"
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_id}\/playlists\/{playlist_id}\/tracks": {
+            "delete": {
+                "summary": "Delete User Playlist Tracks",
+                "description": "[Remove Tracks from a Playlist](https:\/\/developer.spotify.com\/web-api\/remove-tracks-playlist\/)\n",
+                "operationId": "RemoveTracksFromAPlaylisthttpsdeveloperspotifycomwebapiremovetracksplaylist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get User Playlist Tracks",
+                "description": "[Get a Playlist's Tracks](https:\/\/developer.spotify.com\/web-api\/get-playlists-tracks\/)\n",
+                "operationId": "GetAPlaylistsTrackshttpsdeveloperspotifycomwebapigetplayliststracks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "The maximum number of items to return"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "The index of the first item to return"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "description": "A comma-separated list of fields to filter query"
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "The market (an ISO 3166-1 alpha-2 country code)"
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add User Playlist Track",
+                "description": "[Add Tracks to a Playlist](https:\/\/developer.spotify.com\/web-api\/add-tracks-to-playlist\/)\n",
+                "operationId": "AddTracksToAPlaylisthttpsdeveloperspotifycomwebapiaddtrackstoplaylist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "position",
+                        "in": "query",
+                        "description": "The position to insert the tracks, a zero-based index"
+                    },
+                    {
+                        "name": "uris",
+                        "in": "query",
+                        "description": "A comma-separated list of Spotify track URIs to add. A maximum of 100 tracks can be added in one request."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update User Playlist Track",
+                "description": "[Reorder or replace a Playlist's Tracks](https:\/\/developer.spotify.com\/web-api\/reorder-playlists-tracks\/)\n",
+                "operationId": "ReorderOrReplaceAPlaylistsTrackshttpsdeveloperspotifycomwebapireorderplayliststracks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "The user's Spotify user ID."
+                    },
+                    {
+                        "name": "playlist_id",
+                        "in": "path",
+                        "description": "The Spotify playlist ID."
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "It is used to set specified media type."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "album": {
+                "type": "object",
+                "properties": {
+                    "album_type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "artists": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "available_markets": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "copyrights": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_ids": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "genres": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "images": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "popularity": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "release_date": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "release_date_precision": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "album-simple": {
+                "type": "object",
+                "properties": {
+                    "album_type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "available_markets": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "images": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "album-simple-page": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "album-track-page": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "artist": {
+                "type": "object",
+                "properties": {
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "genres": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "images": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "popularity": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "artist-simple": {
+                "type": "object",
+                "properties": {
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "category": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "icons": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "category-page": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "current-user-profile": {
+                "type": "object",
+                "properties": {
+                    "birthdate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "country": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "product": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "featured-playlists": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "followers": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "image": {
+                "type": "object",
+                "properties": {
+                    "height": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "width": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "playlist": {
+                "type": "object",
+                "properties": {
+                    "collaborative": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "followers": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "images": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "public": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "snapshot_id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "playlist-simple": {
+                "type": "object",
+                "properties": {
+                    "collaborative": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "images": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "public": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "snapshot_id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tracks": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "playlist-simple-page": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "playlist-snapshot": {
+                "type": "object",
+                "properties": {
+                    "snapshot_id": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "playlist-track": {
+                "type": "object",
+                "properties": {
+                    "added_at": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "is_local": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "playlist-track-page": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "saved-track": {
+                "type": "object",
+                "properties": {
+                    "added_at": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "saved-track-page": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "search": {
+                "type": "object",
+                "properties": {
+                    "albums": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "artists": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tracks": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "track": {
+                "type": "object",
+                "properties": {
+                    "artists": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "available_markets": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "disc_number": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "duration_ms": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "explicit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_ids": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "is_playable": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "linked_from": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preview_url": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "track_number": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "track-simple": {
+                "type": "object",
+                "properties": {
+                    "artists": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "available_markets": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "disc_number": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "duration_ms": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "explicit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "is_playable": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "linked_from": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preview_url": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "track_number": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "track-simple-page": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "limit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "previous": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "user-followed": {
+                "type": "object",
+                "properties": {
+                    "artists": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "user-profile": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "external_urls": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "uri": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            }
+        }
+    }
+}
