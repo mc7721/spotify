@@ -1,5 +1,5 @@
 {
-    "id": "6a543df969fad73ecc5ec57e86c45aff",
+    "id": "48df84d3727488e0262c614428eeddda",
     "name": "Spotify",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "eda5c38251b035f9bd61aa03169b1c99",
+            "id": "d332004c948cc543c499567c7176d130",
             "name": "Get Albums",
             "url": "httpsapi.spotify.com\/v1\/albums",
             "description": "[Get Several Albums](https:\/\/developer.spotify.com\/web-api\/get-several-albums\/)\n",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "0a4d6ee36c726082ea98578c2dbc981d",
+            "id": "94a72bcf9f263cbc641022dd26c6e467",
             "name": "Get Album",
             "url": "httpsapi.spotify.com\/v1\/albums\/{id}",
             "description": "[Get an Album](https:\/\/developer.spotify.com\/web-api\/get-album\/)\n",
@@ -82,11 +82,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "f0d16ed278e3fd87eaab59a7945bc665",
+            "id": "5407d35ae6818341dbea3b4c4a105fac",
             "name": "Get Album Tracks",
             "url": "httpsapi.spotify.com\/v1\/albums\/{id}\/tracks",
             "description": "[Get an Album's Tracks](https:\/\/developer.spotify.com\/web-api\/get-albums-tracks\/)\n",
@@ -134,11 +134,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "74a4122f471959225fe23f5d6b221321",
+            "id": "d49250a5cd77758412c6f05401e22789",
             "name": "Get Artists",
             "url": "httpsapi.spotify.com\/v1\/artists",
             "description": "[Get Several Artists](https:\/\/developer.spotify.com\/web-api\/get-several-artists\/)\n",
@@ -165,11 +165,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "7d680c0f60ad7584d28de933d99aec63",
+            "id": "28f7a8f6754a5992b186680565c933eb",
             "name": "Get Artist",
             "url": "httpsapi.spotify.com\/v1\/artists\/{id}",
             "description": "[Get an Artist](https:\/\/developer.spotify.com\/web-api\/get-artist\/)\n",
@@ -196,11 +196,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "eaa25d21f50860330299315565965260",
+            "id": "1432d543f41d861811509f43ea626878",
             "name": "Get Artist Albums",
             "url": "httpsapi.spotify.com\/v1\/artists\/{id}\/albums",
             "description": "[Get an Artist's Albums](https:\/\/developer.spotify.com\/web-api\/get-artists-albums\/)\n",
@@ -255,11 +255,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "a6e91fa415e2c0f4e217bdc2267b65a8",
+            "id": "7642261a028ccfc4ab1524e9c1cfa85c",
             "name": "Get Artist Related ARtists",
             "url": "httpsapi.spotify.com\/v1\/artists\/{id}\/related-artists",
             "description": "[Get an Artist's Related Artists](https:\/\/developer.spotify.com\/web-api\/get-related-artists\/)\n",
@@ -286,11 +286,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "68c1908feb08b3ca8b15c4ac4277886a",
+            "id": "2cc82d9458365900c26ba55b811ab3a9",
             "name": "Get Artist Top Tracks",
             "url": "httpsapi.spotify.com\/v1\/artists\/{id}\/top-tracks",
             "description": "[Get an Artist's Top Tracks](https:\/\/developer.spotify.com\/web-api\/get-artists-top-tracks\/)\n",
@@ -324,11 +324,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "99fd5d2a29c24eb95ce35145be0503e7",
+            "id": "2aa7280230b890cffb76689d4b594583",
             "name": "Browse Categories",
             "url": "httpsapi.spotify.com\/v1\/browse\/categories",
             "description": "[Get a List of Browse Categories](https:\/\/developer.spotify.com\/web-api\/get-list-categories\/)\n",
@@ -383,11 +383,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "42df754e9ed20211ce6965184a684606",
+            "id": "51ef1b46d36a65af9ed6ab9d44f7f6d4",
             "name": "Browse Category",
             "url": "httpsapi.spotify.com\/v1\/browse\/categories\/{category_id}",
             "description": "[Get a Single Browse Category](https:\/\/developer.spotify.com\/web-api\/get-category\/)\n",
@@ -435,11 +435,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "86f974e6f83cce1437d5851127778e33",
+            "id": "c83c5d8c2e6acc52b768aab7995fa3c0",
             "name": "Browse Category Playlists",
             "url": "httpsapi.spotify.com\/v1\/browse\/categories\/{category_id}\/playlists",
             "description": "[Get a Category's playlists](https:\/\/developer.spotify.com\/web-api\/get-categorys-playlists\/)\n",
@@ -494,11 +494,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "d2f721e16a21772fd6cc56e33bdfc64e",
+            "id": "61604a7fddca08b5c30223155183bb1c",
             "name": "Browse Featured Playlists",
             "url": "httpsapi.spotify.com\/v1\/browse\/featured-playlists",
             "description": "[Get a List of Featured Playlists](https:\/\/developer.spotify.com\/web-api\/get-list-featured-playlists\/)\n",
@@ -560,11 +560,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "ece3ddc670e5841f064095b9c3458904",
+            "id": "98c286bb06063e1b6d147ddfe1b1fb5b",
             "name": "Browse New Releases",
             "url": "httpsapi.spotify.com\/v1\/browse\/new-releases",
             "description": "[Get a List of New Releases](https:\/\/developer.spotify.com\/web-api\/get-list-new-releases\/)\n",
@@ -612,11 +612,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "16eca3e5b30bf904a295cf516394e9ed",
+            "id": "a921dcff5cbf338b3ccbd66e91165be8",
             "name": "Get Me",
             "url": "httpsapi.spotify.com\/v1\/me",
             "description": "[Get Current User's Profile](https:\/\/developer.spotify.com\/web-api\/get-current-users-profile\/)\n",
@@ -635,11 +635,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "2323922c1b16d3e7892df2b8312a60ac",
+            "id": "493e88df89065f6d86338690b842d219",
             "name": "Delete Following",
             "url": "httpsapi.spotify.com\/v1\/me\/following",
             "description": "[Unfollow Artists or Users](https:\/\/developer.spotify.com\/web-api\/unfollow-artists-users\/)\n",
@@ -673,11 +673,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "2b5025fea4f1aa2189384d7e23238cf4",
+            "id": "68f6ac79518829e18337a2d2559ab971",
             "name": "Get Following",
             "url": "httpsapi.spotify.com\/v1\/me\/following",
             "description": "[Get User's Followed Artists](https:\/\/developer.spotify.com\/web-api\/get-followed-artists\/)\n",
@@ -718,11 +718,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "728c28b878e7a1a86767bad9a1728071",
+            "id": "ef02d72cfdaa2a72d61d6409adbb1f2d",
             "name": "Update Following",
             "url": "httpsapi.spotify.com\/v1\/me\/following",
             "description": "[Follow Artists or Users](https:\/\/developer.spotify.com\/web-api\/follow-artists-users\/)\n",
@@ -756,11 +756,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "d616fc5fa7a2ca7216fd3f05c3c18486",
+            "id": "498a5484f2528e6328f27e855145565c",
             "name": "Get Following contains",
             "url": "httpsapi.spotify.com\/v1\/me\/following\/contains",
             "description": "[Check if Current User Follows Artists or Users](https:\/\/developer.spotify.com\/web-api\/check-current-user-follows\/)\n",
@@ -794,11 +794,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "af785a6a767ee22cd7e388445255eb12",
+            "id": "6626f355e1b2225e0851a12f739594ed",
             "name": "Delete My Tracks",
             "url": "httpsapi.spotify.com\/v1\/me\/tracks",
             "description": "[Remove Tracks for Current User](https:\/\/developer.spotify.com\/web-api\/remove-tracks-user\/)\n",
@@ -832,11 +832,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "03dbdc3242b297d4cf038241604dcd7a",
+            "id": "9e5a18dac6bb1b939c1bae947eda4645",
             "name": "Get My Tracks",
             "url": "httpsapi.spotify.com\/v1\/me\/tracks",
             "description": "[Get Current User's Saved Tracks](https:\/\/developer.spotify.com\/web-api\/get-users-saved-tracks\/)\n",
@@ -884,11 +884,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "5050011c9275116d0faa470d35bd9e11",
+            "id": "78ba6c54d2d96c0788d24300b3e50cd2",
             "name": "Update My Tracks",
             "url": "httpsapi.spotify.com\/v1\/me\/tracks",
             "description": "[Save Tracks for Current User](https:\/\/developer.spotify.com\/web-api\/save-tracks-user\/)\n",
@@ -922,11 +922,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "57e8556d559c0cf978dad2250f69a491",
+            "id": "305d8bd35588df163339828c7dc453e9",
             "name": "Get My Track Contains",
             "url": "httpsapi.spotify.com\/v1\/me\/tracks\/contains",
             "description": "[Check Current User's Saved Tracks](https:\/\/developer.spotify.com\/web-api\/check-users-saved-tracks\/)\n",
@@ -953,11 +953,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "e0c7c4e8c1186f00e4b8097734e55bef",
+            "id": "2a0b8fcfcbe1ef230826cc235078201f",
             "name": "Search",
             "url": "httpsapi.spotify.com\/v1\/search",
             "description": "[Search for an Item](https:\/\/developer.spotify.com\/web-api\/search-item\/)\n",
@@ -1012,11 +1012,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "651c2e1ad8ba1470ee3d5dce2c29445f",
+            "id": "bb4711881e69e94223736485f9d60ef0",
             "name": "Get Tracks",
             "url": "httpsapi.spotify.com\/v1\/tracks",
             "description": "[Get Several Tracks](https:\/\/developer.spotify.com\/web-api\/get-several-tracks\/)\n",
@@ -1050,11 +1050,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "efe3203c2591e27b3e43fa0771ce2d4b",
+            "id": "370c3b068374628c117391dc113bf44f",
             "name": "Get Track",
             "url": "httpsapi.spotify.com\/v1\/tracks\/{id}",
             "description": "[Get a Track](https:\/\/developer.spotify.com\/web-api\/get-track\/)\n",
@@ -1088,11 +1088,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "49cd372e0f639ef927203df963c3a9c0",
+            "id": "35cddcde11bad5391852f15d198eb921",
             "name": "Get User",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}",
             "description": "[Get a User's Profile](https:\/\/developer.spotify.com\/web-api\/get-users-profile\/)\n",
@@ -1119,11 +1119,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "0442a2b1ddd14ad7c80189d83956e2cb",
+            "id": "7d39366248fd1bab6887ab28ed8930ac",
             "name": "Get User Playlists",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists",
             "description": "[Get a List of a User's Playlists](https:\/\/developer.spotify.com\/web-api\/get-list-users-playlists\/)\n",
@@ -1171,11 +1171,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "8c6713748371bc127b27354a16283e6f",
+            "id": "bc7dc633fbf4dfeafb25736786e00636",
             "name": "Add User Playlists",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists",
             "description": "[Create a Playlist](https:\/\/developer.spotify.com\/web-api\/create-playlist\/)\n",
@@ -1216,11 +1216,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "d46ac97e0c677e1a9238a02cd57d957a",
+            "id": "dc7a03bccb9adf1979a4c12f900334e3",
             "name": "Get User Playlist",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}",
             "description": "[Get a Playlist](https:\/\/developer.spotify.com\/web-api\/get-playlist\/)\n",
@@ -1275,11 +1275,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "5ecef6a99fe214cbc081ea6f4de60070",
+            "id": "3858866d3ae9f062d7754c62390e973c",
             "name": "Update User Playlist",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}",
             "description": "[Change a Playlist's Details](https:\/\/developer.spotify.com\/web-api\/change-playlist-details\/)\n",
@@ -1327,11 +1327,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "e357e1dfe5c3f643f937a98d8952f8c9",
+            "id": "a12bc89c9aa7729aa3f57c50359273da",
             "name": "Delete User Playlist Followers",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}\/followers",
             "description": "[Unfollow a Playlist](https:\/\/developer.spotify.com\/web-api\/unfollow-playlist\/)\n",
@@ -1365,11 +1365,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "8abf779b97db111c724713751cddaf8f",
+            "id": "45569792f4ec77b0f1a20f156e9afae3",
             "name": "Update User Playlist Followers",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}\/followers",
             "description": "[Follow a Playlist](https:\/\/developer.spotify.com\/web-api\/follow-playlist\/)\n",
@@ -1410,11 +1410,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "28a67a72f8147b4526a6fcd58777988d",
+            "id": "a25b51de3fd76f930e13c9802bef2722",
             "name": "Get User Playlist Followers Contains",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}\/followers\/contains",
             "description": "[Check if Users Follow a Playlist](https:\/\/developer.spotify.com\/web-api\/check-user-following-playlist\/)\n",
@@ -1455,11 +1455,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "df395ac84731fed27a1286aaaa98193e",
+            "id": "64e88424818d95b691af2dd4e160f124",
             "name": "Delete User Playlist Tracks",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}\/tracks",
             "description": "[Remove Tracks from a Playlist](https:\/\/developer.spotify.com\/web-api\/remove-tracks-playlist\/)\n",
@@ -1507,11 +1507,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "4f47344b123d89f641c6ca45dc682dd3",
+            "id": "55458cbb5dd87460c763f67af031e261",
             "name": "Get User Playlist Tracks",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}\/tracks",
             "description": "[Get a Playlist's Tracks](https:\/\/developer.spotify.com\/web-api\/get-playlists-tracks\/)\n",
@@ -1580,11 +1580,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "a0344e876bcd67fdb549af12577a634f",
+            "id": "75077ff127337f2836edb2e1195f2a0b",
             "name": "Add User Playlist Track",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}\/tracks",
             "description": "[Add Tracks to a Playlist](https:\/\/developer.spotify.com\/web-api\/add-tracks-to-playlist\/)\n",
@@ -1639,11 +1639,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         },
         {
-            "id": "2b7e8024e134e503263a9a7c336aa568",
+            "id": "ac8f20ff24fd914fef979f87e2ca351b",
             "name": "Update User Playlist Track",
             "url": "httpsapi.spotify.com\/v1\/users\/{user_id}\/playlists\/{playlist_id}\/tracks",
             "description": "[Reorder or replace a Playlist's Tracks](https:\/\/developer.spotify.com\/web-api\/reorder-playlists-tracks\/)\n",
@@ -1691,7 +1691,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6a543df969fad73ecc5ec57e86c45aff",
+            "collectionId": "48df84d3727488e0262c614428eeddda",
             "rawModeData": ""
         }
     ]
